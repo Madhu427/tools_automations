@@ -20,4 +20,5 @@ cd /opt/
 
 curl -s -L -O $URL
 tar -xf $FILENAME
+echo "$FILENAME"
 rm -rf $FILENAME
