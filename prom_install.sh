@@ -21,5 +21,6 @@ cd /opt/
 curl -s -L -O $URL
 tar -xf $FILENAME
 rm -rf $FILENAME
+echo "$FILENAME"
 echo "$DIRNAME"
 mv $DIRNAME prometheus 
