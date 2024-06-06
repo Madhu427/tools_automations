@@ -13,7 +13,7 @@ URL=$(curl -L -s https://prometheus.io/download/ | grep tar | grep prometheus | 
 
 
 FILENAME=$(echo $URL | awk -F / '{print $NF}')
-DIRNAME= $(echo $FILENAME | sed -e "s/.tar.gz//") 
+DIRNAME= $(echo $FILENAME | sed -e 's/.tar.gz//') 
 
 
 cd /opt/
