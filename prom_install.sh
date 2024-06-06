@@ -9,7 +9,7 @@ if [ -d /opt/prometheus ]; then
   rm -rf /opt/prometheus
 fi
 
-URL=$(curl -L -s https://prometheus.io/download/ | grep tar | grep prometheus | grep linux-amd64.tar.gz | sed -e "s|>| |g" -e "s|<| |g" -e 's|"| |g' |xargs -n1 | grep ^http | tail -1)
+URL=$(curl -L -s https://prometheus.io/download/ | grep tar | grep prometheus- | grep linux-amd64.tar.gz | sed -e "s|>| |g" -e "s|<| |g" -e 's|"| |g' |xargs -n1 | grep ^http | tail -1)
 
 
 FILENAME=$(echo $URL | awk -F / '{print $NF}')
