@@ -23,4 +23,5 @@ tar -xf $FILENAME
 rm -rf $FILENAME
 echo "$FILENAME"
 echo "$DIRNAME"
+mkdir prometheus
 mv $DIRNAME prometheus 
