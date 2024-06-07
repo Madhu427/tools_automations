@@ -25,6 +25,6 @@ echo "$FILENAME"
 echo "$DIRNAME"
 mv $DIRNAME prometheus 
 
-curl -s https://github.com/Madhu427/tools_automations/blob/master/prometheus.service >/etc/systemd/system/prometheus.service
+curl -s https://raw.githubusercontent.com/Madhu427/tools_automations/master/prometheus.service >/etc/systemd/system/prometheus.service
 sudo systemctl daemon-reload
 sudo systemctl start prometheus
